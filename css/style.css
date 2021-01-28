@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #999;
+}
+
+ul li {
+    list-style: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.social-network {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    color: #fff;
+}
+
+.header {
+    background-color: #ff8663;
+    padding: 15px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header__close-btn {
+    background-image: url(../img/header-close-btn.png);
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.social-network__search {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+}
+
+.search {
+    position: relative;
+}
+
+.search::before {
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: 8px;
+    background-image: url(../img/search.png);
+    width: 13px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.search-input {
+    width: 285px;
+    padding: 8px 27px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 1px solid #f0f0f0;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #c4c4c4;
+}
+
+.search-input::placeholder {
+    color: #9f9f9f;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.social-network__content {
+    display: flex;
+    color: #4f4f4f;
+    background-color: #fff;
+    position: relative;
+}
+
+.social-network__content::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 1px;
+    background-color: #f0f0f0;
+}
+
+.content-left,
+.content-right {
+    width: 50%;
+    padding: 15px;
+    height: 355px;
+    overflow-y: auto;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 3px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #c4c4c4;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #c4c4c4;
+}
+
+.content__title {
+    font-size: 12px;
+    font-weight: 500;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.content-list {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 5px;
+}
+
+.content-left .content-item,
+.content-right .content-item {
+    position: relative;
+}
+ 
+.content-item::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    cursor: pointer;
+}
+
+.content-left .content-item::before {
+    background-image: url(../img/arrow-add.png);
+    width: 16px;
+    height: 16px;
+}
+
+.content-right .content-item::before {
+    background-image: url(../img/arrow-remove.png);
+    width: 14px;
+    height: 14px;
+}
+
+.content-img {
+    width: 45px;
+    height: 45px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.content-name {
+    font-size: 12px;
+}
+
+.footer {
+    background-color: #f0f0f0;
+    padding: 8px;
+    text-align: right;
+}
+
+.footer-btn {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #ff8663;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    transition: background-color .3s linear;
+}
+
+.footer-btn:hover {
+    background-color: #d13f16;
+}
