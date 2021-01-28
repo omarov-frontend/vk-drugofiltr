@@ -30,13 +30,13 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #fff;
     color: #fff;
 }
 
 .header {
     background-color: #ff8663;
     padding: 15px 12px;
+    border-radius: 10px 10px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -181,6 +181,7 @@ ul li {
     background-color: #f0f0f0;
     padding: 8px;
     text-align: right;
+    border-radius: 0 0 10px 10px;
 }
 
 .modal__save-btn {
