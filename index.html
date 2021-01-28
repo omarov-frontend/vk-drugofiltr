@@ -25,81 +25,73 @@
             </header>
     
             <div class="modal-search">
-                <div class="modal-search-left">
-                    <div class="search">
-                        <input class="search__input" type="text" placeholder="Начните вводить имя друга">
-                    </div>
+                <div class="modal-search__left modal-search__col">
+                    <input class="modal-search__input" type="text" placeholder="Начните вводить имя друга">
                 </div>
     
-                <div class="modal-search-right">
-                    <div class="search">
-                        <input class="search__input" type="text" placeholder="Название">
-                    </div>
+                <div class="modal-search__right modal-search__col">
+                    <input class="modal-search__input" type="text" placeholder="Название">
                 </div>
             </div>
 
-            <div class="modal-content">
-                <div class="modal-col modal-left">
+            <div class="modal__content">
+                <div class="modal__col">
                     <h3 class="modal__title">Ваши друзья</h3>
 
-                    <ul class="modal-list">
-                        <li class="modal-item">
-                            <img class="modal-img" src="./img/modal-img.jpg" alt="Woman">
-                            <div class="modal-name">Artem Barabanov</div>
+                    <ul class="friends-list">
+                        <li class="friends-list__item">
+                            <img class="friends-list__img" src="./img/modal-img.jpg" alt="Image">
+                            <div class="friends-list__name">Artem Barabanov</div>
+                            <button class="friends-list__btn friends-list__btn_remove"></button>
                         </li>
-                    </ul>
-                    <ul class="modal-list">
-                        <li class="modal-item">
-                            <img class="modal-img" src="./img/modal-img.jpg" alt="Woman">
-                            <div class="modal-name">Иришка Кочерыжка</div>
+                        <li class="friends-list__item">
+                            <img class="friends-list__img" src="./img/modal-img.jpg" alt="Image">
+                            <div class="friends-list__name">Иришка Кочерыжка</div>
+                            <button class="friends-list__btn friends-list__btn_remove"></button>
                         </li>
-                    </ul>
-                    <ul class="modal-list">
-                        <li class="modal-item">
-                            <img class="modal-img" src="./img/modal-img.jpg" alt="Woman">
-                            <div class="modal-name">Александра Панкратова</div>
+                        <li class="friends-list__item">
+                            <img class="friends-list__img" src="./img/modal-img.jpg" alt="Image">
+                            <div class="friends-list__name">Александра Панкратова</div>
+                            <button class="friends-list__btn friends-list__btn_remove"></button>
                         </li>
-                    </ul>
-                    <ul class="modal-list">
-                        <li class="modal-item">
-                            <img class="modal-img" src="./img/modal-img.jpg" alt="Woman">
-                            <div class="modal-name">Светлана Дулина</div>
+                        <li class="friends-list__item">
+                            <img class="friends-list__img" src="./img/modal-img.jpg" alt="Image">
+                            <div class="friends-list__name">Светлана Дулина</div>
+                            <button class="friends-list__btn friends-list__btn_remove"></button>
                         </li>
-                    </ul>
-                    <ul class="modal-list">
-                        <li class="modal-item">
-                            <img class="modal-img" src="./img/modal-img.jpg" alt="Woman">
-                            <div class="modal-name">Ярослав Квач</div>
+                        <li class="friends-list__item">
+                            <img class="friends-list__img" src="./img/modal-img.jpg" alt="Image">
+                            <div class="friends-list__name">Ярослав Квач</div>
+                            <button class="friends-list__btn friends-list__btn_remove"></button>
                         </li>
-                    </ul>
-                    <ul class="modal-list">
-                        <li class="modal-item">
-                            <img class="modal-img" src="./img/modal-img.jpg" alt="Woman">
-                            <div class="modal-name">Таня Плаксина</div>
+                        <li class="friends-list__item">
+                            <img class="friends-list__img" src="./img/modal-img.jpg" alt="Image">
+                            <div class="friends-list__name">Таня Плаксина</div>
+                            <button class="friends-list__btn friends-list__btn_remove"></button>
                         </li>
                     </ul>
                 </div>
 
-                <div class="modal-col modal-right">
+                <div class="modal__col">
                     <h3 class="modal__title">Друзья в списке</h3>
 
-                    <ul class="modal-list">
-                        <li class="modal-item">
-                            <img class="modal-img" src="./img/modal-img.jpg" alt="Woman">
-                            <div class="modal-name">Михаил Подольский</div>
+                    <ul class="friends-list">
+                        <li class="friends-list__item">
+                            <img class="friends-list__img" src="./img/modal-img.jpg" alt="Image">
+                            <div class="friends-list__name">Михаил Подольский</div>
+                            <button class="friends-list__btn friends-list__btn_remove"></button>
                         </li>
-                    </ul>
-                    <ul class="modal-list">
-                        <li class="modal-item">
-                            <img class="modal-img" src="./img/modal-img.jpg" alt="Woman">
-                            <div class="modal-name">Инна Магдалина</div>
+                        <li class="friends-list__item">
+                            <img class="friends-list__img" src="./img/modal-img.jpg" alt="Image">
+                            <div class="friends-list__name">Инна Магдалина</div>
+                            <button class="friends-list__btn friends-list__btn_remove"></button>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <footer class="footer">
-                <button class="footer-btn" type="button">Сохранить</button>
+            <footer class="modal__footer">
+                <button class="modal__save-btn" type="button">Сохранить</button>
             </footer>
         </div>
 

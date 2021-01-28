@@ -58,17 +58,18 @@ ul li {
     cursor: pointer;
 }
 
+/* MODAL-SEARCH */
 .modal-search {
     display: flex;
     justify-content: space-around;
     background-color: #f0f0f0;
 }
 
-.search {
+.modal-search__col {
     position: relative;
 }
 
-.search::before {
+.modal-search__col::before {
     position: absolute;
     content: '';
     top: 20px;
@@ -79,7 +80,7 @@ ul li {
     cursor: pointer;
 }
 
-.search__input {
+.modal-search__input {
     width: 285px;
     padding: 8px 27px;
     margin: 10px 0;
@@ -87,25 +88,26 @@ ul li {
     border: 1px solid #f0f0f0;
 }
 
-.search__input:focus {
+.modal-search__input:focus {
     outline: none;
     border-color: #c4c4c4;
 }
 
-.search__input::placeholder {
+.modal-search__input::placeholder {
     color: #9f9f9f;
     font-weight: 300;
     font-size: 12px;
 }
 
-.modal-content {
+/* CONTENT */
+.modal__content {
     display: flex;
     color: #4f4f4f;
     background-color: #fff;
     position: relative;
 }
 
-.modal-content::before {
+.modal__content::before {
     position: absolute;
     content: '';
     left: 50%;
@@ -116,25 +118,27 @@ ul li {
     background-color: #f0f0f0;
 }
 
-.modal-col {
-    width: 50%;
-    padding: 15px;
-    height: 355px;
-    overflow-y: auto;
-}
-
-/* Let's get this party started */
+/* ширина скроллбара */
 ::-webkit-scrollbar {
     width: 3px;
 }
  
-/* Handle */
+/* полоса прокрутки */
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #c4c4c4;
 }
+
+/* цвет скролла, пока окно неактивно */
 ::-webkit-scrollbar-thumb:window-inactive {
-    background-color: #c4c4c4;
+    background-color: #fff;
+}
+
+.modal__col {
+    width: 50%;
+    padding: 15px;
+    height: 355px;
+    overflow-y: auto;
 }
 
 .modal__title {
@@ -144,60 +148,42 @@ ul li {
     padding-bottom: 5px;
 }
 
-.modal-list {
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.modal-item {
+.friends-list__item {
     display: flex;
     align-items: center;
     padding: 8px 5px;
+    border-bottom: 1px solid #f0f0f0;
 }
 
-.modal-left .content-item,
-.modal-right .content-item {
-    position: relative;
-}
- 
-.content-item::before {
-    position: absolute;
-    content: '';
-    top: 50%;
-    transform: translateY(-50%);
-    right: 8px;
-    cursor: pointer;
-}
-
-.modal-left .content-item::before {
-    background-image: url(../img/arrow-add.png);
-    width: 16px;
-    height: 16px;
-}
-
-.modal-right .content-item::before {
-    background-image: url(../img/arrow-remove.png);
-    width: 14px;
-    height: 14px;
-}
-
-.modal-img {
+.friends-list__img {
     width: 45px;
     height: 45px;
     margin-right: 8px;
     border-radius: 50%;
 }
 
-.modal-name {
+.friends-list__name {
     font-size: 12px;
 }
 
-.footer {
+.friends-list__btn {
+    background-image: url(../img/arrow-add.png);
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.modal__footer {
     background-color: #f0f0f0;
     padding: 8px;
     text-align: right;
 }
 
-.footer-btn {
+.modal__save-btn {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
     padding: 8px 15px;
@@ -209,6 +195,6 @@ ul li {
     transition: background-color .3s linear;
 }
 
-.footer-btn:hover {
+.modal__save-btn:hover {
     background-color: #d13f16;
 }
