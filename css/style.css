@@ -25,7 +25,7 @@ ul li {
     margin-bottom: 20px;
 }
 
-.social-network {
+.modal {
     width: 620px;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@ ul li {
     cursor: pointer;
 }
 
-.social-network__search {
+.modal-search {
     display: flex;
     justify-content: space-around;
     background-color: #f0f0f0;
@@ -79,7 +79,7 @@ ul li {
     cursor: pointer;
 }
 
-.search-input {
+.search__input {
     width: 285px;
     padding: 8px 27px;
     margin: 10px 0;
@@ -87,27 +87,27 @@ ul li {
     border: 1px solid #f0f0f0;
 }
 
-.search-input:focus {
+.search__input:focus {
     outline: none;
     border-color: #c4c4c4;
 }
 
-.search-input::placeholder {
+.search__input::placeholder {
     color: #9f9f9f;
     font-weight: 300;
     font-size: 12px;
 }
 
-.social-network__content {
+.modal-content {
     display: flex;
     color: #4f4f4f;
     background-color: #fff;
     position: relative;
 }
 
-.social-network__content::before {
-    content: '';
+.modal-content::before {
     position: absolute;
+    content: '';
     left: 50%;
     top: 0;
     bottom: 0;
@@ -116,8 +116,7 @@ ul li {
     background-color: #f0f0f0;
 }
 
-.content-left,
-.content-right {
+.modal-col {
     width: 50%;
     padding: 15px;
     height: 355px;
@@ -138,25 +137,25 @@ ul li {
     background-color: #c4c4c4;
 }
 
-.content__title {
+.modal__title {
     font-size: 12px;
     font-weight: 500;
     border-bottom: 1px solid #f0f0f0;
     padding-bottom: 5px;
 }
 
-.content-list {
+.modal-list {
     border-bottom: 1px solid #f0f0f0;
 }
 
-.content-item {
+.modal-item {
     display: flex;
     align-items: center;
     padding: 8px 5px;
 }
 
-.content-left .content-item,
-.content-right .content-item {
+.modal-left .content-item,
+.modal-right .content-item {
     position: relative;
 }
  
@@ -169,26 +168,26 @@ ul li {
     cursor: pointer;
 }
 
-.content-left .content-item::before {
+.modal-left .content-item::before {
     background-image: url(../img/arrow-add.png);
     width: 16px;
     height: 16px;
 }
 
-.content-right .content-item::before {
+.modal-right .content-item::before {
     background-image: url(../img/arrow-remove.png);
     width: 14px;
     height: 14px;
 }
 
-.content-img {
+.modal-img {
     width: 45px;
     height: 45px;
     margin-right: 8px;
     border-radius: 50%;
 }
 
-.content-name {
+.modal-name {
     font-size: 12px;
 }
 
