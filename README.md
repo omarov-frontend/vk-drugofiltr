@@ -2,4 +2,4 @@
 
 > Вёрстка макета - Drugofiltr
 
-Demo - https://omarov-frontend.github.io/vk-drugofiltr/
+Demo - https://omarovfrontend.github.io/vk-drugofiltr/
